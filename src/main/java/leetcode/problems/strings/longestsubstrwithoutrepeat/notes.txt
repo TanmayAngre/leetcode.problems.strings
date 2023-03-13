@@ -1,0 +1,16 @@
+# Logic:
+I think its sliding window.
+eg. abcab
+We keep adding element to right; => left = 0, right = 1, map = {a=0}
+Now, we update the left pointer to prev index of the recently added element; => left = map[element[right]] if element[right] is not null.
+We update the map which stores the last index of that element; => map = {a=0, b=1}
+
+# DSA:
+Sliding window
+Map
+
+# Time complexity:
+O(n)
+
+# Space complexity:
+O(n)
